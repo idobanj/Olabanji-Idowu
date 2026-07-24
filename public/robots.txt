@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olabanjiidowu.vercel.app/sitemap.xml
