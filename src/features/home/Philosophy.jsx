@@ -49,7 +49,7 @@ export function Philosophy() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {points.map((pt, i) => (
             <div key={i} className="flex gap-4">
-              <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-accent/10 border border-accent/20">
+              <div className="shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-accent/10 border border-accent/20">
                 {pt.icon}
               </div>
               <div className="space-y-1">
