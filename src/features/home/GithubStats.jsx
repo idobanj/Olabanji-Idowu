@@ -144,11 +144,11 @@ export function GithubStats() {
 
             {/* Scrollable Container (Safely handles grid width on small viewports) */}
             <div className="overflow-x-auto pb-2 -mx-6 px-6 sm:mx-0 sm:px-0 scrollbar-thin">
-              <div className="min-w-[620px] py-1">
+              <div className="min-w-155 py-1">
                 <div className="flex gap-3 items-start">
                   
                   {/* Y-Axis Weekday Labels */}
-                  <div className="grid grid-rows-7 h-[81px] text-[9px] text-muted-foreground pr-1 pt-1 justify-items-end select-none">
+                  <div className="grid grid-rows-7 h-20.25 text-[9px] text-muted-foreground pr-1 pt-1 justify-items-end select-none">
                     <span>Mon</span>
                     <span></span>
                     <span>Wed</span>
@@ -163,7 +163,7 @@ export function GithubStats() {
                     {gridCells.map((level, idx) => (
                       <div
                         key={idx}
-                        className={`h-[9.5px] w-[9.5px] rounded-[2px] transition-colors duration-150 ${getLevelColor(level)}`}
+                        className={`h-[9.5px] w-[9.5px] rounded-xs transition-colors duration-150 ${getLevelColor(level)}`}
                         title={`Activity level: ${level}`}
                       ></div>
                     ))}
@@ -180,10 +180,10 @@ export function GithubStats() {
               </span>
               <div className="flex items-center gap-1.5 select-none">
                 <span>Less</span>
-                <div className="h-[9px] w-[9px] rounded-[2px] bg-border/60 dark:bg-border/40"></div>
-                <div className="h-[9px] w-[9px] rounded-[2px] bg-emerald-500/30 dark:bg-emerald-500/20"></div>
-                <div className="h-[9px] w-[9px] rounded-[2px] bg-emerald-500/60 dark:bg-emerald-500/50"></div>
-                <div className="h-[9px] w-[9px] rounded-[2px] bg-emerald-500 dark:bg-emerald-400"></div>
+                <div className="h-2.25 w-2.25 rounded-xs bg-border/60 dark:bg-border/40"></div>
+                <div className="h-2.25 w-2.25 rounded-xs bg-emerald-500/30 dark:bg-emerald-500/20"></div>
+                <div className="h-2.25 w-2.25 rounded-xs bg-emerald-500/60 dark:bg-emerald-500/50"></div>
+                <div className="h-2.25 w-2.25 rounded-xs bg-emerald-500 dark:bg-emerald-400"></div>
                 <span>More</span>
               </div>
             </div>
