@@ -27,7 +27,7 @@ export function Philosophy() {
 
   return (
     <section id="about-section" className="py-24 border-t border-border bg-card/10 transition-colors duration-200">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-16">

@@ -8,11 +8,11 @@ export function OtherProjects() {
 
   return (
     <section className="py-20 border-t border-border transition-colors duration-200">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
-        <div className="space-y-2 mb-12 text-center md:text-left">
-          <h2 className="font-display text-2xl font-bold text-foreground">
+        <div className="space-y-2 mb-12 text-center ">
+          <h2 className="font-display text-3xl font-bold text-foreground">
             Other Projects
           </h2>
           <p className="text-muted-foreground text-sm">

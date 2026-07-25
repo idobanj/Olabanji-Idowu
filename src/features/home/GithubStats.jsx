@@ -53,11 +53,11 @@ export function GithubStats() {
 
   return (
     <section className="py-20 border-t border-border transition-colors duration-200">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
-        <div className="space-y-2 mb-12 text-center md:text-left">
-          <h2 className="font-display text-2xl font-bold text-foreground flex items-center justify-center md:justify-start gap-2.5">
+        <div className="space-y-2 mb-12 text-center ">
+          <h2 className="font-display text-3xl font-bold text-foreground flex items-center justify-center t gap-2.5">
             <Github className="h-6 w-6" />
             GitHub Activity
           </h2>
@@ -70,7 +70,7 @@ export function GithubStats() {
           
           {/* Top Row: Pinned Repos (Grid 2 Columns) */}
           <div className="space-y-4">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground text-center sm:text-start">
               Pinned Repositories
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -26,7 +26,7 @@ export function Contact() {
 
   return (
     <section id="contact-section" className="py-24 border-t border-border bg-card/20 transition-colors duration-200">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
           

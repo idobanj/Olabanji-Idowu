@@ -38,7 +38,7 @@ export function Navbar({ theme, toggleTheme }) {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/90 backdrop-blur-sm transition-colors duration-200">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo & Brand */}
           <div className="flex items-center">

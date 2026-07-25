@@ -37,14 +37,14 @@ export function Technologies() {
 
   return (
     <section className="py-20 border-t border-border bg-card/30 transition-colors duration-200">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
         <div className="space-y-2 mb-12 text-center md:text-left">
-          <h2 className="font-display text-2xl font-bold text-foreground">
+          <h2 className="text-center font-display text-3xl font-bold text-foreground">
             Core Technologies
           </h2>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-center text-muted-foreground text-sm">
             Technologies, libraries, and integrations I work with to build responsive web applications.
           </p>
         </div>
