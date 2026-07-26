@@ -3,25 +3,58 @@ import { Link } from 'react-router-dom';
 import { Mail, FileText, Send, Check } from 'lucide-react';
 import { Github, Linkedin } from '../../components/ui/BrandIcons';
 
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xojgpveo';
+
 export function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitState, setSubmitState] = useState({
+    isSubmitting: false,
+    isSubmitted: false,
+    error: '',
+  });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formState.name || !formState.email || !formState.message) return;
-    
-    // Simulate submission success
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
+
+    setSubmitState({ isSubmitting: true, isSubmitted: false, error: '' });
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+          _subject: `Portfolio message from ${formState.name}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Message could not be sent.');
+      }
+
       setFormState({ name: '', email: '', message: '' });
-    }, 4000);
+      setSubmitState({ isSubmitting: false, isSubmitted: true, error: '' });
+    } catch {
+      setSubmitState({
+        isSubmitting: false,
+        isSubmitted: false,
+        error: 'Something went wrong. Please try again or email me directly.',
+      });
+    }
   };
 
   const handleTextChange = (e) => {
     const { name, value } = e.target;
     setFormState(prev => ({ ...prev, [name]: value }));
+    if (submitState.error || submitState.isSubmitted) {
+      setSubmitState({ isSubmitting: false, isSubmitted: false, error: '' });
+    }
   };
 
   return (
@@ -106,6 +139,7 @@ export function Contact() {
                   value={formState.name}
                   onChange={handleTextChange}
                   required
+                  disabled={submitState.isSubmitting}
                   placeholder="Your Name"
                   className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none transition-colors duration-150"
                 />
@@ -122,6 +156,7 @@ export function Contact() {
                   value={formState.email}
                   onChange={handleTextChange}
                   required
+                  disabled={submitState.isSubmitting}
                   placeholder="you@example.com"
                   className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none transition-colors duration-150"
                 />
@@ -137,25 +172,43 @@ export function Contact() {
                   value={formState.message}
                   onChange={handleTextChange}
                   required
+                  disabled={submitState.isSubmitting}
                   rows={4}
                   placeholder="Type your message here..."
                   className="w-full px-4 py-2.5 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none transition-colors duration-150 resize-none"
                 />
               </div>
 
+              {submitState.error && (
+                <p className="rounded-xl border border-rose-500/30 bg-rose-500/10 px-4 py-3 text-sm font-medium text-rose-600 dark:text-rose-300">
+                  {submitState.error}
+                </p>
+              )}
+
+              {submitState.isSubmitted && (
+                <p className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm font-medium text-emerald-700 dark:text-emerald-300">
+                  Thanks. Your message has been sent.
+                </p>
+              )}
+
               <button
                 type="submit"
-                disabled={isSubmitted}
+                disabled={submitState.isSubmitting || submitState.isSubmitted}
                 className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-200 cursor-pointer ${
-                  isSubmitted 
+                  submitState.isSubmitted 
                     ? 'bg-emerald-600 text-white' 
                     : 'bg-primary text-primary-foreground hover:opacity-95 active:scale-[0.98]'
                 } text-sm`}
               >
-                {isSubmitted ? (
+                {submitState.isSubmitted ? (
                   <>
                     <Check className="h-4 w-4" />
                     Sent Successfully
+                  </>
+                ) : submitState.isSubmitting ? (
+                  <>
+                    <Send className="h-4 w-4" />
+                    Sending...
                   </>
                 ) : (
                   <>
