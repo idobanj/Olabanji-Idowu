@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
+import { InstallPrompt } from '../ui/InstallPrompt';
 
 export function Layout({ children, theme, toggleTheme }) {
   return (
@@ -10,6 +11,7 @@ export function Layout({ children, theme, toggleTheme }) {
         {children}
       </main>
       <Footer />
+      <InstallPrompt />
     </div>
   );
 }

@@ -19,6 +19,10 @@ export function Contact() {
 
     setSubmitState({ isSubmitting: true, isSubmitted: false, error: '' });
 
+    // Fetch with explicit timeout so a hung request doesn't spin forever
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), 15000);
+
     try {
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: 'POST',
@@ -32,19 +36,39 @@ export function Contact() {
           message: formState.message,
           _subject: `Portfolio message from ${formState.name}`,
         }),
+        signal: controller.signal,
       });
+      window.clearTimeout(timeoutId);
 
       if (!response.ok) {
-        throw new Error('Message could not be sent.');
+        // Try to read Formspree's JSON error message; fall back to status text.
+        let detail = response.statusText || 'Message could not be sent.';
+        try {
+          const data = await response.json();
+          if (data?.error) detail = data.error;
+          if (Array.isArray(data?.errors) && data.errors[0]?.message) {
+            detail = data.errors[0].message;
+          }
+        } catch {
+          /* response wasn't JSON; keep statusText */
+        }
+        throw new Error(detail);
       }
 
       setFormState({ name: '', email: '', message: '' });
       setSubmitState({ isSubmitting: false, isSubmitted: true, error: '' });
-    } catch {
+    } catch (err) {
+      window.clearTimeout(timeoutId);
+      // Log the real reason to the console so you (the developer) can debug.
+      console.error('[Contact form] submission failed:', err);
+      const message =
+        err?.name === 'AbortError'
+          ? 'The request timed out. Check your connection and try again.'
+          : err?.message || 'Something went wrong. Please try again or email me directly.';
       setSubmitState({
         isSubmitting: false,
         isSubmitted: false,
-        error: 'Something went wrong. Please try again or email me directly.',
+        error: message,
       });
     }
   };
