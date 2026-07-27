@@ -1,4 +1,4 @@
-const CACHE_NAME = "portfolio-cache-v4";
+const CACHE_NAME = "portfolio-cache-v5";
 const APP_SHELL = "/";
 const URLS_TO_CACHE = [
   "/",
