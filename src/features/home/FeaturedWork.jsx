@@ -16,7 +16,7 @@ export function FeaturedWork() {
             className='py-24 border-t border-border transition-colors duration-200'>
             <div className='mx-auto max-w-7xl px-9 sm:px-6 lg:px-8'>
                 {/* Section Heading */}
-                <div className='space-y-3 mb-16 text-center'>
+                <div className='space-y-3 mb-16 text-center reveal'>
                     <h2 className='font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl'>
                         Featured Projects
                     </h2>
@@ -37,7 +37,7 @@ export function FeaturedWork() {
                                     isEven
                                         ? 'lg:flex-row'
                                         : 'lg:flex-row-reverse'
-                                } items-start`}>
+                                } items-start reveal`}>
                                 {/* Visual Preview / Thumbnail */}
                                 <div className='w-full lg:w-1/2 group'>
                                     <Link

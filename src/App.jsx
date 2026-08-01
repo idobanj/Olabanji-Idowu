@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { useTheme } from './hooks/useTheme';
@@ -19,6 +19,37 @@ function LoadingFallback() {
 
 function App() {
   const { theme, toggleTheme } = useTheme();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-active');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.05, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    const scanAndObserve = () => {
+      const elements = document.querySelectorAll('.reveal:not(.reveal-active)');
+      elements.forEach((el) => observer.observe(el));
+    };
+
+    // Initial scan on mount
+    scanAndObserve();
+
+    // Listen for DOM mutations to scan for lazy-loaded route elements
+    const mutationObserver = new MutationObserver(scanAndObserve);
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      observer.disconnect();
+      mutationObserver.disconnect();
+    };
+  }, []);
 
   return (
     <HelmetProvider>

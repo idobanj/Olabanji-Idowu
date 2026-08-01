@@ -88,7 +88,7 @@ export function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
           
           {/* Column 1: Info */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-6 reveal">
             <div className="space-y-3">
               <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground">
                 Get in Touch
@@ -146,7 +146,7 @@ export function Contact() {
           </div>
 
           {/* Column 2: Form */}
-          <div className="lg:col-span-3 p-8 rounded-2xl border border-border bg-card shadow-sm">
+          <div className="lg:col-span-3 p-8 rounded-2xl border border-border bg-card shadow-sm reveal">
             <h3 className="font-display text-lg font-bold text-foreground mb-6">
               Send a Message
             </h3>

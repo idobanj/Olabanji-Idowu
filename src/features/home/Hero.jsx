@@ -21,7 +21,7 @@ export function Hero() {
                 <div className='flex flex-col items-center justify-center text-center md:flex-row md:text-left md:justify-between gap-12'>
                     {/* Text Content */}
                     <div className='flex-1 space-y-6 max-w-4xl'>
-                        <div className='inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-accent/10 text-accent border border-accent/20'>
+                        <div className='inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold bg-accent/10 text-accent border border-accent/20 animate-fade-in-up'>
                             <span className='relative flex h-2 w-2'>
                                 <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75'></span>
                                 <span className='relative inline-flex rounded-full h-2 w-2 bg-accent'></span>
@@ -29,20 +29,20 @@ export function Hero() {
                             Open for opportunities
                         </div>
 
-                        <h1 className='font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-[55px] leading-[1.1]'>
+                        <h1 className='font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-[55px] leading-[1.1] animate-fade-in-up delay-100'>
                             Frontend Developer building modern, performant, and{' '}
                             <span className='text-accent'>AI-powered</span> web
                             applications.
                         </h1>
 
-                        <p className='text-lg text-muted-foreground leading-relaxed max-w-xl'>
+                        <p className='text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up delay-200'>
                             Hello, I'm Olabanji. I specialize in building
                             responsive user interfaces, modular React codebases,
                             and integrations with AI models.
                         </p>
 
                         {/* CTA Buttons */}
-                        <div className='flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2'>
+                        <div className='flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2 animate-fade-in-up delay-300'>
                             <button
                                 onClick={handleScrollToProjects}
                                 className='inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 shadow-md cursor-pointer transition-all duration-150 active:scale-95 text-sm'>
@@ -59,7 +59,7 @@ export function Hero() {
                         </div>
 
                         {/* Social Connect */}
-                        <div className='flex justify-center md:justify-start items-center gap-6 pt-4 text-muted-foreground'>
+                        <div className='flex justify-center md:justify-start items-center gap-6 pt-4 text-muted-foreground animate-fade-in-up delay-400'>
                             <a
                                 href='https://github.com/idobanj'
                                 target='_blank'
@@ -86,7 +86,7 @@ export function Hero() {
                     </div>
 
                     {/* Profile Picture */}
-                    <div className='relative flex justify-center items-center'>
+                    <div className='relative flex justify-center items-center animate-scale-in delay-200'>
                         <div className='absolute inset-0 rounded-3xl bg-linear-to-tr from-accent/20 to-transparent blur-2xl'></div>
                         <div className='relative border border-border p-2 bg-card rounded-3xl shadow-xl max-w-70 sm:max-w-[320px]'>
                             <img

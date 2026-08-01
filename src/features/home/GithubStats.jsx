@@ -56,7 +56,7 @@ export function GithubStats() {
       <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
-        <div className="space-y-2 mb-12 text-center ">
+        <div className="space-y-2 mb-12 text-center reveal">
           <h2 className="font-display text-3xl font-bold text-foreground flex items-center justify-center t gap-2.5">
             <Github className="h-6 w-6" />
             GitHub Activity
@@ -69,7 +69,7 @@ export function GithubStats() {
         <div className="space-y-8">
           
           {/* Top Row: Pinned Repos (Grid 2 Columns) */}
-          <div className="space-y-4">
+          <div className="space-y-4 reveal">
             <h3 className="text-xs font-bold uppercase tracking-wider text-muted-foreground text-center sm:text-start">
               Pinned Repositories
             </h3>
@@ -119,7 +119,7 @@ export function GithubStats() {
           </div>
 
           {/* Bottom Row: Full-Width Contributions Graph */}
-          <div className="p-6 rounded-xl border border-border bg-card shadow-sm space-y-6">
+          <div className="p-6 rounded-xl border border-border bg-card shadow-sm space-y-6 reveal">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div className="space-y-1">
                 <h3 className="font-display text-sm font-bold text-foreground flex items-center gap-2">

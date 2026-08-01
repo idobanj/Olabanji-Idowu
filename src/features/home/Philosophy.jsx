@@ -30,7 +30,7 @@ export function Philosophy() {
       <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-16">
+        <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-16 reveal">
           <div className="space-y-3 md:w-1/2">
             <h2 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
               Development Philosophy
@@ -46,7 +46,7 @@ export function Philosophy() {
         </div>
 
         {/* Philosophy Points */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
           {points.map((pt, i) => (
             <div key={i} className="flex gap-4">
               <div className="shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-accent/10 border border-accent/20">

@@ -11,7 +11,7 @@ export function OtherProjects() {
       <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}
-        <div className="space-y-2 mb-12 text-center ">
+        <div className="space-y-2 mb-12 text-center reveal">
           <h2 className="font-display text-3xl font-bold text-foreground">
             Other Projects
           </h2>
@@ -21,7 +21,7 @@ export function OtherProjects() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
           {otherProjects.map(project => (
             <div 
               key={project.id}
