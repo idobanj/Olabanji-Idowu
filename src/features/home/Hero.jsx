@@ -88,7 +88,7 @@ export function Hero() {
                     {/* Profile Picture */}
                     <div className='relative flex justify-center items-center animate-scale-in delay-200'>
                         <div className='absolute inset-0 rounded-3xl bg-linear-to-tr from-accent/20 to-transparent blur-2xl'></div>
-                        <div className='relative border border-border p-2 bg-card rounded-3xl shadow-xl max-w-70 sm:max-w-[320px]'>
+                        <div className='relative border border-border p-2 bg-card rounded-3xl shadow-xl max-w-70 sm:max-w-[320px] animate-float hover:shadow-2xl transition-all duration-300 hover:scale-[1.01]'>
                             <img
                                 src='/img/img-portfolio2.jpg'
                                 alt='Olabanji Peter Idowu'

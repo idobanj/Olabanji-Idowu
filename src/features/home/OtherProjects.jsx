@@ -21,11 +21,12 @@ export function OtherProjects() {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 reveal">
-          {otherProjects.map(project => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {otherProjects.map((project, i) => (
             <div 
               key={project.id}
-              className="flex flex-col justify-between p-6 rounded-2xl border border-border bg-card hover:shadow-md transition-shadow group duration-200"
+              className="flex flex-col justify-between p-6 rounded-2xl border border-border bg-card hover:-translate-y-1.5 hover:shadow-xl hover:border-accent/20 transition-all group duration-300 reveal"
+              style={{ transitionDelay: `${(i % 2) * 150}ms` }}
             >
               <div className="space-y-4">
                 {/* Header title */}
@@ -42,7 +43,7 @@ export function OtherProjects() {
                     className="text-muted-foreground hover:text-foreground transition-colors p-1"
                     aria-label={`View live demo of ${project.title}`}
                   >
-                    <ArrowUpRight className="h-5 w-5" />
+                    <ArrowUpRight className="h-5 w-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
                   </a>
                 </div>
 

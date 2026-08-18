@@ -104,7 +104,8 @@ export function Contact() {
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=idowuolabanji181@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:bg-muted/50 transition-colors duration-150"
+                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:bg-muted/30 hover:-translate-y-0.5 hover:shadow-md hover:border-accent/20 transition-all duration-200 reveal"
+                style={{ transitionDelay: '100ms' }}
               >
                 <div className="p-2 rounded-lg bg-accent/10 border border-accent/20 text-accent">
                   <Mail className="h-5 w-5" />
@@ -119,7 +120,8 @@ export function Contact() {
                 href="https://www.linkedin.com/in/olabanjiidowu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:bg-muted/50 transition-colors duration-150"
+                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:bg-muted/30 hover:-translate-y-0.5 hover:shadow-md hover:border-accent/20 transition-all duration-200 reveal"
+                style={{ transitionDelay: '200ms' }}
               >
                 <div className="p-2 rounded-lg bg-accent/10 border border-accent/20 text-accent">
                   <Linkedin className="h-5 w-5" />
@@ -132,7 +134,8 @@ export function Contact() {
 
               <Link
                 to="/resume"
-                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:bg-muted/50 transition-colors duration-150"
+                className="flex items-center gap-3 p-4 rounded-xl border border-border bg-card hover:bg-muted/30 hover:-translate-y-0.5 hover:shadow-md hover:border-accent/20 transition-all duration-200 reveal"
+                style={{ transitionDelay: '300ms' }}
               >
                 <div className="p-2 rounded-lg bg-accent/10 border border-accent/20 text-accent">
                   <FileText className="h-5 w-5" />

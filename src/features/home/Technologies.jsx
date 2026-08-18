@@ -50,15 +50,16 @@ export function Technologies() {
         </div>
 
         {/* Stack Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((cat, i) => (
             <div 
               key={i}
-              className="p-6 rounded-2xl border border-border bg-card space-y-4 shadow-sm"
+              className="p-6 rounded-2xl border border-border bg-card space-y-4 shadow-sm reveal hover:-translate-y-1.5 hover:shadow-xl hover:border-accent/25 transition-all duration-300"
+              style={{ transitionDelay: `${(i % 3) * 120}ms` }}
             >
               {/* Category Header */}
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-muted">
+                <div className="p-2 rounded-xl bg-muted group-hover:scale-110 transition-transform duration-250">
                   {cat.icon}
                 </div>
                 <h3 className="font-display text-base font-bold text-foreground">
@@ -71,7 +72,7 @@ export function Technologies() {
                 {cat.skills.map(skill => (
                   <span
                     key={skill}
-                    className="px-2.5 py-1 text-xs font-medium rounded-lg bg-muted text-foreground border border-border/50 hover:border-accent/40 transition-colors duration-150"
+                    className="px-2.5 py-1 text-xs font-medium rounded-lg bg-muted text-foreground border border-border/50 hover:scale-105 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200 cursor-default"
                   >
                     {skill}
                   </span>

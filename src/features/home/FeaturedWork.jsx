@@ -42,11 +42,11 @@ export function FeaturedWork() {
                                 <div className='w-full lg:w-1/2 group'>
                                     <Link
                                         to={`/projects/${project.id}`}
-                                        className='block overflow-hidden rounded-2xl border border-border bg-card p-2 shadow-sm hover:shadow-md transition-shadow'>
+                                        className='block overflow-hidden rounded-2xl border border-border bg-card p-2 shadow-sm hover:-translate-y-1.5 hover:shadow-xl hover:border-accent/20 transition-all duration-300'>
                                         <img
                                             src={project.image}
                                             alt={`${project.title} Interface Preview`}
-                                            className='rounded-xl w-full aspect-video object-cover filter saturate-75 group-hover:saturate-100 transition-all duration-300'
+                                            className='rounded-xl w-full aspect-video object-cover filter saturate-75 group-hover:saturate-100 group-hover:scale-[1.03] transition-all duration-500'
                                             loading='lazy'
                                         />
                                     </Link>

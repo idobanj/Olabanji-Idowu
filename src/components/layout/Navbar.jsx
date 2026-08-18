@@ -50,7 +50,7 @@ export function Navbar({ theme, toggleTheme }) {
               <img 
                 src="/img/20241226_195729.png" 
                 alt="Olabanji Idowu Logo" 
-                className="h-9 w-9 rounded-lg object-contain bg-slate-900 p-0.5" 
+                className="h-9 w-9 rounded-lg object-contain bg-slate-900 p-0.5 hover:rotate-12 transition-transform duration-300" 
               />
               <span className="font-display font-bold text-lg tracking-tight">
                 OLABANJI PETER
@@ -62,25 +62,25 @@ export function Navbar({ theme, toggleTheme }) {
           <div className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => handleNavClick('home-section')}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+              className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
             >
               Home
             </button>
             <button 
               onClick={() => handleNavClick('about-section')}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+              className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
             >
               About
             </button>
             <button 
               onClick={() => handleNavClick('project-section')}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+              className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
             >
               Projects
             </button>
             <button 
               onClick={() => handleNavClick('contact-section')}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+              className="relative text-sm font-medium text-muted-foreground hover:text-foreground transition-colors cursor-pointer after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
             >
               Contact
             </button>
