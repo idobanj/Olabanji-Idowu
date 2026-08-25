@@ -217,7 +217,7 @@ export default function Resume() {
               </h2>
               <div className="text-xs sm:text-sm">
                 <h3 className="font-bold text-foreground print:text-black">Federal University of Technology, Minna</h3>
-                <p className="text-muted-foreground print:text-slate-700 text-xs mt-0.5">Bachelor of Engineering (Expected 2027)</p>
+                <p className="text-muted-foreground print:text-slate-700 text-xs mt-0.5">Bachelor of Engineering</p>
               </div>
             </div>
 
