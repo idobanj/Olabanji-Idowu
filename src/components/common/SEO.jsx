@@ -12,8 +12,8 @@ export function SEO({
 }) {
   const defaultTitle = 'Olabanji Idowu | Frontend Developer & React Engineer';
   const displayTitle = title ? `${title} | Olabanji Idowu` : defaultTitle;
-  const displayDesc = description || 'Portfolio of Olabanji Idowu — Frontend Developer skilled in React, Tailwind CSS, JavaScript, and responsive design. Explore projects and contact details.';
-  const displayKeywords = keywords || 'Frontend Developer, React Developer, JavaScript Developer, Portfolio Website, HTML CSS JS, Responsive Web Design';
+  const displayDesc = description || 'Portfolio of Olabanji Idowu — Frontend Developer skilled in React, TypeScript, Tailwind CSS, JavaScript, and responsive design. Explore projects and contact details.';
+  const displayKeywords = keywords || 'Frontend Developer, React Developer, TypeScript Developer, JavaScript Developer, Portfolio Website, HTML CSS JS, Responsive Web Design';
   
   const absoluteOgImage = ogImage.startsWith('http') 
     ? ogImage 

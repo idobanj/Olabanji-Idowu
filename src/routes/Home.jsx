@@ -15,7 +15,7 @@ export default function Home() {
     "name": "Olabanji Peter Idowu",
     "jobTitle": "Frontend Developer",
     "image": "https://olabanjiidowu.vercel.app/img/img-portfolio2.jpg",
-    "description": "Frontend Developer building modern, performant, and AI-powered web applications with React and JavaScript.",
+    "description": "Frontend Developer building modern, performant, and AI-powered web applications with React, TypeScript, and JavaScript.",
     "url": "https://olabanjiidowu.vercel.app",
     "sameAs": [
       "https://github.com/idobanj",

@@ -6,7 +6,7 @@ export function Technologies() {
     {
       title: 'Frontend Engineering',
       icon: <Layers className="h-5 w-5 text-blue-500" />,
-      skills: ['React.js', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Tailwind CSS', 'React Router']
+      skills: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Tailwind CSS', 'React Router']
     },
     {
       title: 'Backend Services',

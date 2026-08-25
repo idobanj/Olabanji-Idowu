@@ -128,28 +128,27 @@ export function FeaturedWork() {
                                     </div>
 
                                     {/* Actions */}
-                                    <div className='flex flex-wrap items-center gap-4 pt-2'>
+                                    <div className='flex flex-wrap items-center gap-3 pt-2'>
                                         <Link
                                             to={`/projects/${project.id}`}
-                                            className='inline-flex items-center gap-1 text-sm font-bold text-accent hover:underline cursor-pointer group'>
+                                            className='inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-accent text-white font-bold hover:bg-accent/90 shadow-sm hover:shadow transition-all duration-150 active:scale-95 text-xs cursor-pointer group'>
                                             Read Case Study
                                             <ArrowRight className='h-4 w-4 group-hover:translate-x-1 transition-transform' />
                                         </Link>
-                                        <div className='h-3 w-px bg-border'></div>
                                         <a
                                             href={project.liveUrl}
                                             target='_blank'
                                             rel='noopener noreferrer'
-                                            className='inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors'>
-                                            <ExternalLink className='h-4 w-4' />
+                                            className='inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-black text-white hover:bg-neutral-950 dark:bg-white dark:text-black dark:hover:bg-slate-100 border border-transparent shadow-sm transition-all duration-150 active:scale-95 text-xs font-bold cursor-pointer'>
+                                            <ExternalLink className='h-4 w-4 text-white dark:text-black' />
                                             Live Demo
                                         </a>
                                         <a
                                             href={project.githubUrl}
                                             target='_blank'
                                             rel='noopener noreferrer'
-                                            className='inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors'>
-                                            <Github className='h-4 w-4' />
+                                            className='inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-border bg-card text-foreground font-semibold hover:bg-muted/50 hover:border-accent/30 shadow-sm transition-all duration-150 active:scale-95 text-xs cursor-pointer'>
+                                            <Github className='h-4 w-4 text-muted-foreground' />
                                             Code
                                         </a>
                                     </div>

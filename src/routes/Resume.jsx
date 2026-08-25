@@ -67,38 +67,35 @@ export default function Resume() {
               Olabanji Peter Idowu
             </h1>
             <p className="text-accent print:text-slate-800 font-semibold tracking-wider uppercase text-xs sm:text-sm">
-              Frontend Developer | React & JavaScript Developer
+              Frontend Developer | React & TypeScript Developer
             </p>
             
             {/* Contact Details Grid */}
             <div className="flex flex-wrap justify-center items-center gap-y-2 gap-x-6 text-xs sm:text-sm text-muted-foreground print:text-slate-700">
               <span className="flex items-center gap-1">
-                <MapPin className="h-3.5 w-3.5" />
-                Nigeria
+                <Mail className="h-4 w-4" />
+                <a href="mailto:idowuolabanji181@gmail.com" className="hover:underline">idowuolabanji181@gmail.com</a>
               </span>
-              <a href="mailto:idowuolabanji181@gmail.com" className="flex items-center gap-1 hover:text-foreground">
-                <Mail className="h-3.5 w-3.5" />
-                idowuolabanji181@gmail.com
-              </a>
-              <a href="tel:+2349078062952" className="flex items-center gap-1 hover:text-foreground">
-                <Phone className="h-3.5 w-3.5" />
-                09078062952
-              </a>
-            </div>
-
-            <div className="flex flex-wrap justify-center items-center gap-y-2 gap-x-6 text-xs sm:text-sm text-muted-foreground print:text-slate-700 pt-1">
-              <a href="https://olabanjiidowu.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-foreground">
-                <Globe className="h-3.5 w-3.5" />
-                olabanjiidowu.vercel.app
-              </a>
-              <a href="https://github.com/idobanj" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-foreground">
-                <Github className="h-3.5 w-3.5" />
-                github.com/idobanj
-              </a>
-              <a href="https://linkedin.com/in/olabanjiidowu" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-foreground">
-                <Linkedin className="h-3.5 w-3.5" />
-                linkedin.com/in/olabanjiidowu
-              </a>
+              <span className="flex items-center gap-1">
+                <Phone className="h-4 w-4" />
+                <a href="tel:+2348149016621" className="hover:underline">+234 814 9016 621</a>
+              </span>
+              <span className="flex items-center gap-1">
+                <MapPin className="h-4 w-4" />
+                <span>Minna, Niger State, Nigeria</span>
+              </span>
+              <span className="flex items-center gap-1">
+                <Globe className="h-4 w-4" />
+                <a href="https://olabanjiidowu.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:underline">olabanjiidowu.vercel.app</a>
+              </span>
+              <span className="flex items-center gap-1">
+                <Github className="h-4 w-4" />
+                <a href="https://github.com/idobanj" target="_blank" rel="noopener noreferrer" className="hover:underline">github.com/idobanj</a>
+              </span>
+              <span className="flex items-center gap-1">
+                <Linkedin className="h-4 w-4" />
+                <a href="https://linkedin.com/in/olabanjiidowu" target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/olabanjiidowu</a>
+              </span>
             </div>
           </div>
 
@@ -108,7 +105,7 @@ export default function Resume() {
               Professional Summary
             </h2>
             <p className="text-muted-foreground print:text-slate-700 text-sm leading-relaxed">
-              Frontend Developer with hands-on experience building responsive, AI-powered web applications using React, JavaScript, Supabase, and modern frontend technologies. Experienced integrating authentication, REST APIs, AI capabilities with Gemini API, and payment workflows. Focused on creating accessible, performant, and maintainable applications with clean architecture and user-centered design.
+              Frontend Developer with hands-on experience building responsive, AI-powered web applications using React, TypeScript, JavaScript, Supabase, and modern frontend technologies. Experienced integrating authentication, REST APIs, AI capabilities with Gemini API, and payment workflows. Focused on creating accessible, performant, and maintainable applications with clean architecture and user-centered design.
             </p>
           </div>
 
@@ -118,7 +115,7 @@ export default function Resume() {
               Technical Skills
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-sm text-muted-foreground print:text-slate-700">
-              <p><strong>Languages:</strong> JavaScript (ES6+), HTML5, CSS3</p>
+              <p><strong>Languages:</strong> TypeScript, JavaScript (ES6+), HTML5, CSS3</p>
               <p><strong>Frontend:</strong> React, React Router, Tailwind CSS, Bootstrap</p>
               <p><strong>Backend:</strong> Node.js, Express.js</p>
               <p><strong>Database:</strong> Supabase, PostgreSQL</p>
@@ -143,8 +140,12 @@ export default function Resume() {
                 Designed and developed an AI-powered writing coach using React, Supabase, and Gemini API. Built the core writing assistance workflow, personalized feedback experience, authentication, and responsive UI while handling asynchronous state management and routing efficiently.
               </p>
               <div className="flex gap-4 text-xs font-medium text-accent print:text-slate-800">
-                <a href="https://sabiwrite-ai.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">Demo <ArrowLeft className="h-3 w-3 rotate-180" /></a>
-                <a href="https://github.com/idobanj/SabiWrite-AI" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">Code <ArrowLeft className="h-3 w-3 rotate-180" /></a>
+                <a href="https://sabiwrite-ai.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                  Demo <ArrowLeft className="h-3 w-3 rotate-180" />
+                </a>
+                <a href="https://github.com/idobanj/SabiWrite-AI" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                  Code <ArrowLeft className="h-3 w-3 rotate-180" />
+                </a>
               </div>
             </div>
 
@@ -158,27 +159,34 @@ export default function Resume() {
                 Built a contribution ledger and dues tracking platform featuring structured records, local data persistence, member directories, and responsive tables that adapt to mobile layouts. Integrated payment checkout simulation using Paystack APIs.
               </p>
               <div className="flex gap-4 text-xs font-medium text-accent print:text-slate-800">
-                <a href="https://churchdue.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">Demo <ArrowLeft className="h-3 w-3 rotate-180" /></a>
-                <a href="https://github.com/idobanj/ChurchDue-project" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">Code <ArrowLeft className="h-3 w-3 rotate-180" /></a>
+                <a href="https://churchdue.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                  Demo <ArrowLeft className="h-3 w-3 rotate-180" />
+                </a>
+                <a href="https://github.com/idobanj/ChurchDue-project" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                  Code <ArrowLeft className="h-3 w-3 rotate-180" />
+                </a>
               </div>
             </div>
 
-            {/* Perspective Lifestyle & Acme Rocket Grid */}
+            {/* Two Column Projects */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
               <div className="space-y-1">
                 <h4 className="font-display font-bold text-sm text-foreground print:text-black">Perspective Lifestyle</h4>
                 <p className="text-muted-foreground print:text-slate-700 text-xs leading-relaxed">
                   Responsive frontend lookbook project demonstrating CSS Grid layout schemas and hover transition sets.
                 </p>
-                <a href="https://perspective-lifestyle.vercel.app" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-accent print:text-slate-800 hover:underline">View Live</a>
+                <a href="https://perspective-lifestyle.vercel.app" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-accent print:text-slate-800 hover:underline">
+                  View Live
+                </a>
               </div>
-
               <div className="space-y-1">
                 <h4 className="font-display font-bold text-sm text-foreground print:text-black">Acme Rocket</h4>
                 <p className="text-muted-foreground print:text-slate-700 text-xs leading-relaxed">
                   Tailwind CSS product landing template designed with dynamic specs comparison grids and accessibility standards.
                 </p>
-                <a href="https://acme-rocket-website-rose.vercel.app" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-accent print:text-slate-800 hover:underline">View Live</a>
+                <a href="https://acme-rocket-website-rose.vercel.app" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-accent print:text-slate-800 hover:underline">
+                  View Live
+                </a>
               </div>
             </div>
           </div>
@@ -209,7 +217,7 @@ export default function Resume() {
               </h2>
               <div className="text-xs sm:text-sm">
                 <h3 className="font-bold text-foreground print:text-black">Federal University of Technology, Minna</h3>
-                <p className="text-muted-foreground print:text-slate-700 text-xs mt-0.5">B.Eng. Chemical Engineering (Expected 2027)</p>
+                <p className="text-muted-foreground print:text-slate-700 text-xs mt-0.5">Bachelor of Engineering (Expected 2027)</p>
               </div>
             </div>
 
