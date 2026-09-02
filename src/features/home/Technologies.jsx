@@ -72,7 +72,7 @@ export function Technologies() {
                 {cat.skills.map(skill => (
                   <span
                     key={skill}
-                    className="px-2.5 py-1 text-xs font-medium rounded-lg bg-muted text-foreground border border-border/50 hover:scale-105 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200 cursor-default"
+                    className="px-2.5 py-1 text-xs font-mono font-medium rounded-lg bg-muted text-foreground border border-border/50 hover:scale-105 hover:bg-accent hover:text-white hover:border-accent transition-all duration-200 cursor-default"
                   >
                     {skill}
                   </span>

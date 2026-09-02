@@ -68,7 +68,7 @@ export function FeaturedWork() {
                                         {project.technologies.map((tech) => (
                                             <span
                                                 key={tech}
-                                                className='px-2.5 py-1 text-xs font-semibold rounded-md border border-border bg-card text-foreground'>
+                                                className='px-2.5 py-1 text-xs font-mono font-medium rounded-md border border-border bg-card text-foreground'>
                                                 {tech}
                                             </span>
                                         ))}

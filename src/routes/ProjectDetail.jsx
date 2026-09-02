@@ -86,7 +86,7 @@ export default function ProjectDetail() {
             {project.technologies.map(tech => (
               <span 
                 key={tech}
-                className="px-3 py-1 text-xs font-semibold rounded-lg border border-border bg-card text-foreground"
+                className="px-3 py-1 text-xs font-mono font-medium rounded-lg border border-border bg-card text-foreground"
               >
                 {tech}
               </span>
