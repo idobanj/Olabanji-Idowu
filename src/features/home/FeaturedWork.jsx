@@ -14,7 +14,7 @@ export function FeaturedWork() {
         <section
             id='project-section'
             className='py-24 border-t border-border transition-colors duration-200'>
-            <div className='mx-auto max-w-7xl px-9 sm:px-6 lg:px-8'>
+            <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                 {/* Section Heading */}
                 <div className='space-y-3 mb-16 text-center reveal'>
                     <h2 className='font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl'>

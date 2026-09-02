@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Cpu, AlertCircle, Bookmark, Compass } from 'lucide-react';
 import { Github } from '../components/ui/BrandIcons';
 import { SEO } from '../components/common/SEO';
@@ -7,7 +7,6 @@ import { projects } from '../data/projects';
 
 export default function ProjectDetail() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const project = projects.find(p => p.id === id);
 
   // Auto scroll to top on load
@@ -17,7 +16,7 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="mx-auto max-w-5xl px-4 py-32 text-center space-y-6">
+      <div className="mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8 text-center space-y-6">
         <AlertCircle className="h-16 w-16 mx-auto text-rose-500" />
         <h1 className="font-display text-3xl font-extrabold">Project Not Found</h1>
         <p className="text-muted-foreground max-w-md mx-auto">
@@ -62,7 +61,7 @@ export default function ProjectDetail() {
         structuredData={projectSchema}
       />
       
-      <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 transition-colors duration-200">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 transition-colors duration-200">
         
         {/* Back Link */}
         <Link 
