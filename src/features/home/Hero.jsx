@@ -30,15 +30,15 @@ export function Hero() {
                         </div>
 
                         <h1 className='font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-[55px] leading-[1.1] animate-fade-in-up delay-100'>
-                            Frontend Developer building modern, performant, and{' '}
+                            Full-Stack Developer building modern, performant, and{' '}
                             <span className='text-accent'>AI-powered</span> web
                             applications.
                         </h1>
 
                         <p className='text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in-up delay-200'>
                             Hello, I'm Olabanji. I specialize in building
-                            responsive user interfaces, modular React codebases,
-                            and integrations with AI models.
+                            scalable full-stack web applications, combining responsive
+                            React interfaces with robust Node.js, Supabase, and PostgreSQL backends.
                         </p>
 
                         {/* CTA Buttons */}
@@ -90,7 +90,7 @@ export function Hero() {
                         <div className='absolute inset-0 rounded-3xl bg-linear-to-tr from-accent/20 to-transparent blur-2xl'></div>
                         <div className='relative border border-border p-2 bg-card rounded-3xl shadow-xl max-w-70 sm:max-w-[320px] animate-float hover:shadow-2xl transition-all duration-300 hover:scale-[1.01]'>
                             <img
-                                src='/img/img-portfolio2.jpg'
+                                src='/img/profpicture.jpg'
                                 alt='Olabanji Peter Idowu'
                                 className='rounded-2xl object-cover aspect-4/5 filter grayscale-70 hover:grayscale-0 transition-all duration-300 shadow-inner'
                                 loading='eager'

@@ -5,15 +5,15 @@ export function SEO({
   title,
   description,
   keywords,
-  ogImage = '/img/img-portfolio2.jpg',
+  ogImage = '/img/profpicture.jpg',
   ogUrl = 'https://olabanjiidowu.vercel.app',
   canonicalUrl,
   structuredData
 }) {
-  const defaultTitle = 'Olabanji Idowu | Frontend Developer & React Engineer';
+  const defaultTitle = 'Olabanji Idowu | Full-Stack Developer & Software Engineer';
   const displayTitle = title ? `${title} | Olabanji Idowu` : defaultTitle;
-  const displayDesc = description || 'Portfolio of Olabanji Idowu — Frontend Developer skilled in React, TypeScript, Tailwind CSS, JavaScript, and responsive design. Explore projects and contact details.';
-  const displayKeywords = keywords || 'Frontend Developer, React Developer, TypeScript Developer, JavaScript Developer, Portfolio Website, HTML CSS JS, Responsive Web Design';
+  const displayDesc = description || 'Portfolio of Olabanji Idowu — Full-Stack Developer skilled in React, TypeScript, Node.js, PostgreSQL, Supabase, Tailwind CSS, and scalable web architectures.';
+  const displayKeywords = keywords || 'Full-Stack Developer, Software Engineer, React Developer, Node.js Developer, PostgreSQL, Supabase, TypeScript, JavaScript, Web Applications, Portfolio';
   
   const absoluteOgImage = ogImage.startsWith('http') 
     ? ogImage 

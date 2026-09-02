@@ -84,43 +84,38 @@ export function FeaturedWork() {
                                                 <>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Gemini API integration
+                                                        Gemini AI & Deno Edge Functions
                                                     </li>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Distraction-free rich
-                                                        editor
+                                                        PostgreSQL database & mastery engine
                                                     </li>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Preset prompt templates
+                                                        Supabase Auth & mistake analytics
                                                     </li>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Responsive writing
-                                                        layouts
+                                                        Automated quiz generation & feedback
                                                     </li>
                                                 </>
                                             ) : (
                                                 <>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Client-side local
-                                                        storage
+                                                        Supabase PostgreSQL & RLS security
                                                     </li>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        JSON database backup
-                                                        imports
+                                                        Paystack payment & webhook functions
                                                     </li>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Member record indexes
+                                                        TanStack Query & Zustand state
                                                     </li>
                                                     <li className='flex items-center gap-2'>
                                                         <span className='h-1.5 w-1.5 rounded-full bg-accent'></span>
-                                                        Filtered financial
-                                                        sheets
+                                                        Role-based admin & member ledger
                                                     </li>
                                                 </>
                                             )}

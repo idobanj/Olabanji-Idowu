@@ -18,11 +18,11 @@ export default function Resume() {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "name": "Olabanji Peter Idowu Resume",
-    "description": "Professional Resume of Olabanji Peter Idowu — Frontend Developer",
+    "description": "Professional Resume of Olabanji Peter Idowu — Full-Stack Developer",
     "mainEntity": {
       "@type": "Person",
       "name": "Olabanji Peter Idowu",
-      "jobTitle": "Frontend Developer",
+      "jobTitle": "Full-Stack Developer",
       "email": "idowuolabanji181@gmail.com",
       "telephone": "+2349078062952"
     }
@@ -32,7 +32,7 @@ export default function Resume() {
     <>
       <SEO 
         title="Resume - Olabanji Peter Idowu"
-        description="Professional resume of Olabanji Peter Idowu, Frontend Developer."
+        description="Professional resume of Olabanji Peter Idowu, Full-Stack Developer."
         ogUrl="https://olabanjiidowu.vercel.app/resume"
         structuredData={resumeSchema}
       />
@@ -67,7 +67,7 @@ export default function Resume() {
               Olabanji Peter Idowu
             </h1>
             <p className="text-accent print:text-slate-800 font-semibold tracking-wider uppercase text-xs sm:text-sm">
-              Frontend Developer | React & TypeScript Developer
+              Full-Stack Developer | React, Node.js & Supabase
             </p>
             
             {/* Contact Details Grid */}
@@ -105,7 +105,7 @@ export default function Resume() {
               Professional Summary
             </h2>
             <p className="text-muted-foreground print:text-slate-700 text-sm leading-relaxed">
-              Frontend Developer with hands-on experience building responsive, AI-powered web applications using React, TypeScript, JavaScript, Supabase, and modern frontend technologies. Experienced integrating authentication, REST APIs, AI capabilities with Gemini API, and payment workflows. Focused on creating accessible, performant, and maintainable applications with clean architecture and user-centered design.
+              Full-Stack Developer with hands-on experience architecting responsive, AI-powered web applications and secure backend systems using React, TypeScript, Node.js, Supabase, PostgreSQL, and modern cloud technologies. Experienced in developing serverless Edge Functions, REST APIs, role-based authentication, database migrations with Row Level Security (RLS), Gemini AI workflows, and Paystack payment systems. Focused on creating scalable, performant, and maintainable software with clean architectural patterns.
             </p>
           </div>
 
@@ -115,12 +115,12 @@ export default function Resume() {
               Technical Skills
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-sm text-muted-foreground print:text-slate-700">
-              <p><strong>Languages:</strong> TypeScript, JavaScript (ES6+), HTML5, CSS3</p>
-              <p><strong>Frontend:</strong> React, React Router, Tailwind CSS, Bootstrap</p>
-              <p><strong>Backend:</strong> Node.js, Express.js</p>
-              <p><strong>Database:</strong> Supabase, PostgreSQL</p>
-              <p><strong>AI & APIs:</strong> Gemini API, REST APIs, Paystack</p>
-              <p><strong>Tools:</strong> Git, GitHub, Vercel, npm</p>
+              <p><strong>Languages:</strong> TypeScript, JavaScript (ES6+), SQL, HTML5, CSS3</p>
+              <p><strong>Frontend:</strong> React, React Router, Tailwind CSS, TanStack Query, Zustand</p>
+              <p><strong>Backend:</strong> Node.js, Express.js, Deno Edge Functions</p>
+              <p><strong>Database:</strong> PostgreSQL, Supabase (RLS, Migrations, Triggers)</p>
+              <p><strong>AI & APIs:</strong> Gemini API, REST APIs, Paystack Payment Gateway & Webhooks</p>
+              <p><strong>Tools:</strong> Git, GitHub, Vercel, Vite, npm, Postman</p>
             </div>
           </div>
 
@@ -134,10 +134,10 @@ export default function Resume() {
             <div className="space-y-2">
               <div className="flex justify-between items-baseline flex-wrap gap-2">
                 <h3 className="font-display font-bold text-base text-foreground print:text-black">SabiWrite AI</h3>
-                <span className="text-xs text-muted-foreground print:text-slate-500">AI Writing Assistant</span>
+                <span className="text-xs text-muted-foreground print:text-slate-500">Full-Stack AI Writing Assistant</span>
               </div>
               <p className="text-muted-foreground print:text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Designed and developed an AI-powered writing coach using React, Supabase, and Gemini API. Built the core writing assistance workflow, personalized feedback experience, authentication, and responsive UI while handling asynchronous state management and routing efficiently.
+                Designed and built an end-to-end AI-powered writing platform using React 19, Supabase, PostgreSQL, Deno Edge Functions, and Gemini API. Engineered 12 database schema migrations, automated server-side quiz generation, mistake analytics, gamified skill mastery tracking, and role-based authentication.
               </p>
               <div className="flex gap-4 text-xs font-medium text-accent print:text-slate-800">
                 <a href="https://sabiwrite-ai.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
@@ -153,10 +153,10 @@ export default function Resume() {
             <div className="space-y-2">
               <div className="flex justify-between items-baseline flex-wrap gap-2">
                 <h3 className="font-display font-bold text-base text-foreground print:text-black">ChurchDue</h3>
-                <span className="text-xs text-muted-foreground print:text-slate-500">Contribution Tracking App</span>
+                <span className="text-xs text-muted-foreground print:text-slate-500">Full-Stack Financial & Dues Management Platform</span>
               </div>
               <p className="text-muted-foreground print:text-slate-700 text-xs sm:text-sm leading-relaxed">
-                Built a contribution ledger and dues tracking platform featuring structured records, local data persistence, member directories, and responsive tables that adapt to mobile layouts. Integrated payment checkout simulation using Paystack APIs.
+                Built a full-stack organization contribution ledger and dues tracking platform using React 18, TanStack Query, Zustand, and Supabase PostgreSQL with Row Level Security (RLS). Developed serverless edge functions for Paystack checkout initialization, server-side transaction verification, and real-time webhook event processing.
               </p>
               <div className="flex gap-4 text-xs font-medium text-accent print:text-slate-800">
                 <a href="https://churchdue.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
@@ -198,13 +198,14 @@ export default function Resume() {
             </h2>
             <div className="space-y-2">
               <div className="flex justify-between items-baseline flex-wrap gap-2">
-                <h3 className="font-display font-bold text-sm text-foreground print:text-black">Independent Frontend Developer</h3>
+                <h3 className="font-display font-bold text-sm text-foreground print:text-black">Independent Full-Stack Developer</h3>
                 <span className="text-xs text-muted-foreground print:text-slate-500">2024 – Present</span>
               </div>
               <ul className="list-disc pl-5 text-muted-foreground print:text-slate-700 text-xs sm:text-sm space-y-1">
-                <li>Architected, optimized, and deployed responsive React applications using Vite and Tailwind CSS.</li>
-                <li>Integrated secure third-party integrations (Supabase DB, Gemini AI endpoints, Paystack Payment API).</li>
-                <li>Applied mobile-first layout rules, semantic structures, and accessibility standards for WCAG AA compliance.</li>
+                <li>Architected, built, and deployed full-stack web applications combining modular React frontends with Supabase and PostgreSQL backends.</li>
+                <li>Engineered serverless Edge Functions for third-party integrations, including Gemini AI prompt workflows and Paystack payment processing with secure webhook verification.</li>
+                <li>Designed relational database schemas, SQL migrations, and Row Level Security (RLS) policies ensuring strict multi-tenant data isolation.</li>
+                <li>Applied responsive layout rules, clean API error boundaries, and accessibility standards for WCAG AA compliance.</li>
               </ul>
             </div>
           </div>

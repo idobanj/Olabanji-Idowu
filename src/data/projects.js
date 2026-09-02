@@ -2,94 +2,94 @@ export const projects = [
   {
     id: 'sabiwrite-ai',
     title: 'SabiWrite AI',
-    shortDescription: 'An AI-powered writing assistant helping content creators generate, format, and optimize copy with Gemini API.',
-    description: 'SabiWrite AI is a professional writing portal that leverages artificial intelligence to streamline document drafting, proofreading, and copywriting. Built for content writers, students, and professionals, it provides customized template prompts (e.g. emails, blog posts, outlines) alongside an interactive, real-time editor.',
+    shortDescription: 'A full-stack AI writing coach and mastery platform built with React 19, Supabase, PostgreSQL, Deno Edge Functions, and Gemini API.',
+    description: 'SabiWrite AI is an end-to-end full-stack writing assistant and personalized feedback platform. It pairs an interactive, real-time writing environment with serverless Deno Edge Functions for text analysis, automated quiz generation, mistake analytics, and a gamified mastery engine backed by PostgreSQL and Supabase Auth.',
     liveUrl: 'https://sabiwrite-ai.vercel.app',
     githubUrl: 'https://github.com/idobanj/SabiWrite-AI',
     image: '/img/sabiwrite-ai.png',
-    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Gemini API', 'Vercel'],
+    technologies: ['React', 'Supabase', 'PostgreSQL', 'Deno Edge Functions', 'Gemini API', 'Tailwind CSS', 'Vercel'],
     featured: true,
     caseStudy: {
-      overview: 'SabiWrite AI was built to solve the creative friction writers experience during drafting. By combining natural language processing via Google\'s Gemini API with a distraction-free writing environment, the application acts as an editor, brainstormer, and copy generator in one cohesive tab.',
-      problem: 'Many content creators face writer\'s block, spend significant time formatting documents, or find existing AI tools over-complicated and expensive. There was a clear need for a fast, responsive, template-oriented text assistant that allows immediate editing and copying of drafts without page reloads.',
-      solution: 'A modern, single-page writing portal. Users can select from specialized templates (outlines, copy edits, headlines, full drafts), enter their requirements, and receive structured AI outputs. The integrated live editor lets them immediately edit, format, and copy the results.',
-      architecture: 'The client-side architecture leverages React.js for modularity. State management is handled through React Hooks, maintaining document history in localStorage. The AI integration interacts directly with API end-points using robust error handling and loading feedback (skeletons and progress cues).',
+      overview: 'SabiWrite AI was engineered as an end-to-end full-stack writing coach. It bridges natural language processing via Google\'s Gemini API with a robust Supabase/PostgreSQL backend running 12 database migrations and serverless Deno Edge Functions for text analysis, automated quiz generation, mistake tracking, and user skill mastery progression.',
+      problem: 'Writers, content creators, and students need more than just one-off text generation; they need structured writing workflows, systematic error tracking, personalized learning feedback, and persistent cloud accounts without security compromises or high latency.',
+      solution: 'A comprehensive full-stack platform featuring a distraction-free split-screen editor, automated server-side writing evaluation, gamified skill mastery tracking, quiz generation, and authenticated user workspaces.',
+      architecture: 'Full-stack architecture combining a React 19 frontend with a managed Supabase backend. Server-side logic runs across specialized Deno Edge Functions (analyze-text, generate-quiz, skill-mastery, log-mistake, bump-mastery, user-stats, get-notifications). Persistent data, user profiles, and mistake histories are structured in PostgreSQL with Row-Level Security (RLS).',
       decisions: [
         {
-          title: 'React Functional Components & Routing',
-          description: 'Used functional components with hooks for cleaner lifecycle management and React Router for fast page navigation between templates, active documents, and settings.'
+          title: 'Serverless Deno Edge Functions',
+          description: 'Moved AI prompt orchestration, quiz generation, and mistake logging into Supabase Edge Functions (Deno/TypeScript) to protect API credentials and ensure low latency near users.'
         },
         {
-          title: 'Direct API Integration with Fallbacks',
-          description: 'Integrated the Gemini API directly with custom helper utilities to parse responses and manage loading states, ensuring standard error boundaries handle API timeouts gracefuly.'
+          title: 'Relational PostgreSQL Schema & RLS',
+          description: 'Implemented 12 migration files establishing relations between users, mistake logs, quiz sessions, notification feeds, and mastery engines protected by strict Row-Level Security.'
         },
         {
-          title: 'Tailwind CSS for Layout Fluidity',
-          description: 'Leveraged Tailwind CSS to style a responsive split-screen writing layout: prompts on the left, rich editor on the right.'
+          title: 'React 19 & Fluid Typography',
+          description: 'Leveraged React 19 and Tailwind CSS to style a responsive split-screen writing layout: prompts and mastery feedback on the left, rich editor on the right.'
         }
       ],
       challenges: [
         {
-          title: 'Managing Latency of AI Responses',
-          description: 'AI model inference takes time. I implemented skeleton layouts, loading state cues, and structured text rendering to keep the user engaged. I also added client-side caching for duplicate prompt inputs.'
+          title: 'Managing AI Latency & Microservices',
+          description: 'Orchestrating multi-step AI requests and database updates across edge functions while maintaining a responsive UI using loading states, optimistic UI feedback, and structured text parsing.'
         },
         {
           title: 'Mobile Editor Usability',
-          description: 'Writing long-form content on mobile is difficult with on-screen keyboards. I created an adaptive viewport using dynamic CSS custom properties (`100svh`) to keep toolbar buttons visible above the keyboard.'
+          description: 'Writing long-form content on mobile is difficult with on-screen keyboards. I created an adaptive viewport using dynamic CSS custom properties (100svh) to keep toolbar buttons visible above the keyboard.'
         }
       ],
-      lessons: 'Working with LLM endpoints taught me the importance of structured prompts. Designing UI helpers to preprocess user input before sending it to the model significantly improved the quality and formatting of the output text.',
+      lessons: 'Designing serverless edge functions to preprocess prompts and validate outputs with structured schemas provides far better reliability and security than direct client-side model calls.',
       improvements: [
-        'User authentication using Supabase to store documents in the cloud.',
-        'Rich-text formatting export to PDF and DOCX.',
-        'Real-time grammar verification and tone-of-voice profiling.'
+        'Export documents to formatted PDF and DOCX.',
+        'Real-time collaborative editing sessions.',
+        'Custom organization-level writing style guides.'
       ]
     }
   },
   {
     id: 'churchdue',
     title: 'ChurchDue',
-    shortDescription: 'A simplified contribution tracker and financial record management system for organizations.',
-    description: 'ChurchDue is a tailored ledger application designed to track contributions, tithes, and special project funds. Built to replace error-prone spreadsheets, it features member registration, transaction entries, and client-side financial reports.',
+    shortDescription: 'A full-stack dues tracking, financial ledger, and payment platform built with React, Supabase, PostgreSQL, and Paystack.',
+    description: 'ChurchDue is a full-stack organization ledger and financial management platform designed for churches and community groups. Built with React, Supabase PostgreSQL, and Paystack integration, it features member directories, dues tracking, payment processing, role-based access control, and real-time financial reporting.',
     liveUrl: 'https://churchdue.vercel.app/',
     githubUrl: 'https://github.com/idobanj/ChurchDue-project',
     image: '/img/churchdue.png',
-    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'Web Storage API', 'Vercel'],
+    technologies: ['React', 'Supabase', 'PostgreSQL', 'Paystack API', 'Serverless Functions', 'Tailwind CSS', 'TanStack Query', 'Zustand'],
     featured: true,
     caseStudy: {
-      overview: 'ChurchDue was built as a solution for community organizations that require clear, error-free tracking of members\' voluntary financial contributions without the cost or complexity of heavy ERP accounting suites.',
-      problem: 'Small community organizations often rely on Excel spreadsheets or paper ledgers. This process leads to transcription errors, lack of backup security, and makes searching or filtering transaction history tedious for administrators.',
-      solution: 'A high-performance contribution ledger app. Administrators can manage members, log tithes/offerings against specific profiles, categorize entries by fund types, and generate summaries. It operates fully offline using Web Storage, enabling file import/export.',
-      architecture: 'Built as a React SPA. Data operations are managed through local storage with helper utilities to import and export backup JSON files. The interface separates administrative tables, transaction logging forms, and financial metrics charts.',
+      overview: 'ChurchDue was built as a full-stack financial platform for community organizations and churches to replace manual ledgers and chaotic spreadsheets. It delivers secure organization onboarding, role-based access control (Admins and Members), dues management, and Paystack payment processing with serverless webhook validation.',
+      problem: 'Churches and associations struggle with tracking member dues, tithes, and special project pledges. Spreadsheets lead to reconciliation errors, lack audit trails, and cannot securely automate digital payments.',
+      solution: 'A robust full-stack dues management portal. Administrators create organizations, configure dues, and track reconciliation in real time. Members can register, view outstanding balances, and pay online through Paystack.',
+      architecture: 'Full-stack system utilizing React 18 with TanStack Query and Zustand on the frontend, paired with a Supabase PostgreSQL backend. Edge functions handle Paystack checkout initialization, server-side transaction verification, webhook event ingestion, and admin provisioning, secured with PostgreSQL Row Level Security (RLS).',
       decisions: [
         {
-          title: 'Client-Side Local Storage & JSON Backup',
-          description: 'To ensure data sovereignty and low cost, the ledger operates locally in the browser, offering manual JSON export/import for backups rather than forcing database setups.'
+          title: 'Serverless Payment & Webhook Architecture',
+          description: 'Implemented Supabase Edge Functions (initialize-paystack-payment, verify-paystack-payment, and paystack-webhook) to securely sign requests, handle Paystack callbacks, and prevent fraudulent client-side transaction spoofing.'
         },
         {
-          title: 'Tabular Search & Filter State',
-          description: 'Constructed custom hooks to filter contribution lists by date ranges, member names, and payment modes on the fly.'
+          title: 'Role-Based Row Level Security',
+          description: 'Engineered PostgreSQL RLS policies ensuring administrators have isolated multi-tenant organization access while students/members can only query their own payment and dues records.'
         },
         {
-          title: 'Clean Grid Layouts',
-          description: 'Employed Tailwind CSS flex-grids to present key metrics cards (Total Collected, Member Counts, Active Projects) at the top of the dashboard.'
+          title: 'TanStack Query & Zustand State',
+          description: 'Utilized TanStack Query for server-state caching, automatic refetching on transaction updates, and Zustand for lightweight local UI state.'
         }
       ],
       challenges: [
         {
-          title: 'Performance with Growing Datasets',
-          description: 'As rows of contributions grow, client-side table rendering slows down. I implemented basic pagination and memoized filtered results using `useMemo` to prevent unnecessary component re-renders.'
+          title: 'Webhook Idempotency & Verification',
+          description: 'Ensuring payment callbacks from Paystack are processed idempotently without double-crediting dues or failing on transient network retries.'
         },
         {
           title: 'Responsive Tabular Data',
           description: 'Wide financial tables do not fit on phone screens. I solved this by building an adaptive component that transforms table rows into compact key-value cards on mobile viewports.'
         }
       ],
-      lessons: 'Offline-first client-side storage is incredibly fast and cheap, but it requires explicit backup prompts. Educating the user on downloading backup JSON files was a key product experience constraint.',
+      lessons: 'Payment processing must always be verified server-side via cryptographic signature checks and webhooks; client-side confirmation alone is never sufficient.',
       improvements: [
-        'Database synchronization with PostgreSQL/Supabase for multi-user support.',
-        'Automated receipt generation and emailing features.',
-        'Analytical graphs visualizing seasonal contribution trends.'
+        'Automated PDF receipt generation and email dispatch.',
+        'SMS notifications for pending dues and payment confirmations.',
+        'Multi-currency support for international branches.'
       ]
     }
   },

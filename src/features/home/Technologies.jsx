@@ -6,32 +6,32 @@ export function Technologies() {
     {
       title: 'Frontend Engineering',
       icon: <Layers className="h-5 w-5 text-blue-500" />,
-      skills: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Tailwind CSS', 'React Router']
+      skills: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'Tailwind CSS', 'TanStack Query', 'Zustand']
     },
     {
-      title: 'Backend Services',
+      title: 'Backend & Serverless',
       icon: <Server className="h-5 w-5 text-emerald-500" />,
-      skills: ['Node.js', 'REST APIs', 'API Integrations']
+      skills: ['Node.js', 'Express.js', 'Deno Edge Functions', 'REST APIs', 'Webhooks']
     },
     {
-      title: 'Database & Storage',
+      title: 'Database & Security',
       icon: <Database className="h-5 w-5 text-indigo-500" />,
-      skills: ['Supabase', 'PostgreSQL', 'Web Storage API']
+      skills: ['PostgreSQL', 'Supabase', 'Row Level Security (RLS)', 'SQL Migrations']
     },
     {
-      title: 'AI Integration',
+      title: 'AI & Payment Integrations',
       icon: <BrainCircuit className="h-5 w-5 text-purple-500" />,
-      skills: ['Gemini API', 'Prompt Engineering', 'AI Text Generation']
+      skills: ['Gemini API', 'Prompt Engineering', 'Paystack API', 'Webhook Verification']
     },
     {
-      title: 'Deployment & Hosting',
+      title: 'Deployment & Cloud',
       icon: <Cloud className="h-5 w-5 text-sky-500" />,
-      skills: ['Vercel', 'Netlify', 'GitHub Pages']
+      skills: ['Vercel', 'Supabase Cloud', 'Netlify', 'GitHub Pages']
     },
     {
-      title: 'Tooling & Version Control',
+      title: 'Tooling & Architecture',
       icon: <GitBranch className="h-5 w-5 text-amber-500" />,
-      skills: ['Git', 'GitHub', 'npm', 'Vite']
+      skills: ['Git', 'GitHub', 'Vite', 'npm', 'Postman']
     }
   ];
 
@@ -45,7 +45,7 @@ export function Technologies() {
             Core Technologies
           </h2>
           <p className="text-center text-muted-foreground text-sm">
-            Technologies, libraries, and integrations I work with to build responsive web applications.
+            Technologies, frameworks, databases, and APIs I work with to build scalable full-stack web applications.
           </p>
         </div>
 

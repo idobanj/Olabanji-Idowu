@@ -13,9 +13,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Olabanji Peter Idowu",
-    "jobTitle": "Frontend Developer",
-    "image": "https://olabanjiidowu.vercel.app/img/img-portfolio2.jpg",
-    "description": "Frontend Developer building modern, performant, and AI-powered web applications with React, TypeScript, and JavaScript.",
+    "jobTitle": "Full-Stack Developer",
+    "image": "https://olabanjiidowu.vercel.app/img/profpicture.jpg",
+    "description": "Full-Stack Developer building scalable, performant, and AI-powered web applications with React, Node.js, PostgreSQL, and Supabase.",
     "url": "https://olabanjiidowu.vercel.app",
     "sameAs": [
       "https://github.com/idobanj",
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Olabanji Idowu | Frontend Developer & React Engineer"
+        title="Olabanji Idowu | Full-Stack Developer & Software Engineer"
         ogUrl="https://olabanjiidowu.vercel.app/"
         structuredData={personSchema}
       />
