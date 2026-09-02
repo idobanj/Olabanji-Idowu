@@ -59,8 +59,6 @@ export function Contact() {
       setSubmitState({ isSubmitting: false, isSubmitted: true, error: '' });
     } catch (err) {
       window.clearTimeout(timeoutId);
-      // Log the real reason to the console so you (the developer) can debug.
-      console.error('[Contact form] submission failed:', err);
       const message =
         err?.name === 'AbortError'
           ? 'The request timed out. Check your connection and try again.'
