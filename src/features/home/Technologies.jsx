@@ -36,7 +36,7 @@ export function Technologies() {
   ];
 
   return (
-    <section className="py-20 border-t border-border bg-card/30 transition-colors duration-200">
+    <section id="skills-section" className="py-20 border-t border-border bg-card/30 transition-colors duration-200">
       <div className="mx-auto max-w-7xl px-4 md:px-10">
         
         {/* Section Header */}

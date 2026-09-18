@@ -34,6 +34,12 @@
     }
   }
 
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
   @keyframes fade-in-up {
     from {
       opacity: 0;
@@ -62,6 +68,38 @@
       transform: scale(1);
     }
   }
+}
+
+/* Prince Portfolio Navbar & Glow Styles */
+.btn__shine {
+  color: #9f9f9f;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  animation: shine 3s infinite linear;
+}
+
+.dark .btn__shine {
+  background: linear-gradient(to right, #9f9f9f 0, #ffffff 15%, #60a5fa 30%, #868686 45%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+}
+
+:root:not(.dark) .btn__shine {
+  background: linear-gradient(to right, #334155 0, #0f172a 15%, #2563eb 30%, #475569 45%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
 }
 
 @layer base {
