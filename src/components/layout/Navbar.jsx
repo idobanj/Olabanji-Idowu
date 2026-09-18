@@ -84,7 +84,7 @@ export function Navbar({theme, toggleTheme}) {
             )}
 
             {/* Floating Pill Navbar */}
-            <header className='fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-5xl transition-all duration-300'>
+            <header className='fixed top-3 sm:top-5 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-7xl transition-all duration-300'>
                 <nav className='relative flex items-center justify-between px-3 sm:px-5 py-2.5 sm:py-3 rounded-full border border-border/80 bg-card/60 dark:bg-card/75 backdrop-blur-xl shadow-lg shadow-black/5 dark:shadow-black/40'>
                     {/* Logo & Brand */}
                     <Link
