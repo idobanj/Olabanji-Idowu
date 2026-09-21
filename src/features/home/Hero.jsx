@@ -16,7 +16,7 @@ export function Hero() {
     return (
         <section
             id='home-section'
-            className='relative flex min-h-[85vh] items-center justify-center py-20 transition-colors duration-200'>
+            className='relative flex min-h-[85vh] items-center justify-center py-8 transition-colors duration-200'>
             <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
                 <div className='flex flex-col items-center justify-center text-center md:flex-row md:text-left md:justify-between gap-12'>
                     {/* Text Content */}
