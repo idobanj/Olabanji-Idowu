@@ -78,7 +78,7 @@ export default function Resume() {
               </span>
               <span className="flex items-center gap-1">
                 <Phone className="h-4 w-4" />
-                <a href="tel:+2348149016621" className="hover:underline">+234 814 9016 621</a>
+                <a href="tel:+2349078062952" className="hover:underline">+234 907 806 2952</a>
               </span>
               <span className="flex items-center gap-1">
                 <MapPin className="h-4 w-4" />
