@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Printer, Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { ArrowLeft, Download, Printer, Mail, Phone, MapPin, Globe } from 'lucide-react';
 import { Github, Linkedin } from '../components/ui/BrandIcons';
 import { SEO } from '../components/common/SEO';
 
@@ -9,10 +9,6 @@ export default function Resume() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const handlePrint = () => {
-    window.print();
-  };
 
   const resumeSchema = {
     "@context": "https://schema.org",
@@ -49,13 +45,25 @@ export default function Resume() {
             Back to Portfolio
           </Link>
 
-          <button
-            onClick={handlePrint}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-95 text-xs shadow-sm cursor-pointer transition-all duration-150"
-          >
-            <Printer className="h-4 w-4" />
-            Print / Save as PDF
-          </button>
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href="/olabanji_resume.pdf"
+              download="olabanji_resume.pdf"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-95 text-xs shadow-sm transition-all duration-150"
+            >
+              <Download className="h-4 w-4" />
+              Download PDF
+            </a>
+            <a
+              href="/olabanji_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-border text-foreground font-semibold hover:bg-muted active:scale-95 text-xs shadow-sm cursor-pointer transition-all duration-150"
+            >
+              <Printer className="h-4 w-4" />
+              Print / Save as PDF
+            </a>
+          </div>
         </div>
 
         {/* Resume Sheet */}
